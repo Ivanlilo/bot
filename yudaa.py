@@ -10,7 +10,7 @@ cl.login(token='ElPJ2FgdOAsd6oQ18ta1.1+3Vi14Oeqtv+NdgJM0yKq.qImrsAAdMl+PP0AFvF9D
 cl.loginResult()
 
 ki = YUDA.LINE()
-ki.login(token='Elwa7WI32T6DIt3JB3t2.7+vJLNZRxru4XEpcq1gLKG.W8wuHaQPrRBVcHPM7H80Tkikzh7YYmKIdi/oWT4kZpM=')
+ki.login(token='ElZlX3pXQ23SbkTEwlZ2.7+vJLNZRxru4XEpcq1gLKG.ShvdqXien11hLVCQTIO864E65Qokwg+4i1LEpuZ17bU=')
 ki.loginResult()
 
 kc = YUDA.LINE()
