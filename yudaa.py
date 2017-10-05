@@ -6,7 +6,7 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
 
 cl = YUDA.LINE()
-cl.login(token='ElPJ2FgdOAsd6oQ18ta1.1+3Vi14Oeqtv+NdgJM0yKq.qImrsAAdMl+PP0AFvF9D38fKS/l3v2jOodHg5FuNfKw=')
+cl.login(token='ElZg2jYRijugajTL9mQ1.1+3Vi14Oeqtv+NdgJM0yKq.q9yRuf/jcGIzV4rxj4+ehANqBLGB3ZYgZXOXBGSDVtU=')
 cl.loginResult()
 
 ki = YUDA.LINE()
