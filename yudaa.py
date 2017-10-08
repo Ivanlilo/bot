@@ -6,15 +6,15 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
 
 cl = YUDA.LINE()
-cl.login(token='ElJFiRon5pTp1hJMxxW1.1+3Vi14Oeqtv+NdgJM0yKq.QRPMqHQA8uD+qINOZsYQ/tQsGMkEJHCK/0P/ykmL2Qk=')
+cl.login(token='ElsET4IsjmpO0qs3T0P1.1+3Vi14Oeqtv+NdgJM0yKq.5SNI9kWUFstGj75PIa0COZtm/fbu5JZXxVdLgQJ3C/I=')
 cl.loginResult()
 
 ki = YUDA.LINE()
-ki.login(token='ElZlX3pXQ23SbkTEwlZ2.7+vJLNZRxru4XEpcq1gLKG.ShvdqXien11hLVCQTIO864E65Qokwg+4i1LEpuZ17bU=')
+ki.login(token='ElG4xKDqMLcJ0pdqwCla.oRtMEI7y4A2IebSleYKBkG.Oq+AvZ8sVXpxMblNNj0JlLJOOGVcDy2rTiBpPyoUXWk=')
 ki.loginResult()
 
 kc = YUDA.LINE()
-kc.login(token='ElYQ2Ea0Yl2K5ajZcfha.oRtMEI7y4A2IebSleYKBkG.TKqq9rqdyvoSUxjrAbj5Wcgbx5UUiUf1vxDDJJtk7KU=')
+kc.login(token='ElsET4IsjmpO0qs3T0P1.1+3Vi14Oeqtv+NdgJM0yKq.5SNI9kWUFstGj75PIa0COZtm/fbu5JZXxVdLgQJ3C/I=')
 kc.loginResult()
 
 kk = cl
@@ -24,7 +24,49 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 helpMessage =""" Yuda Bot
-[Yuda reinv [mid]]
+Bot By Yuda TGM
+Version 1.5.3
+♦==>group<==♦
+•> Yuda1 gn ....
+•> Yuda2 gn ....
+•> Yuda3 gn ....
+•> Ginfo
+•> #welcome
+•> Yuda say ....
+•> Yuda reinv [mid]
+•> Ourl --> untuk open url
+•> Curl --> untuk close url
+🎁Troll Gift 🎁
+•> Gift
+•> Yuda1 gift
+•> Yuda2 gift
+•> Yuda3 gift
+•> All gift
+⚠⛔Admin Only⛔⚠
+•> YudaA masuk
+•> keluar
+•> Set
+•> Cancel/bot cancel
+•> Kill
+•> Ban @
+•> Unban @
+•> random:.... (For change name random)
+⏩Info From Bot⏪
+•> Kirim kontak untuk dapatkan info
+•> Ginfo
+•> Responsename
+•> $set •--> $read (command ini error Yuda lagi perbaiki)
+•> Gurl •--> untuk ambil url
+•> Banlist
+>>>BOT<<<
+•> Jam off/on
+•> Up
+•> Change clock
+•> Mid
+•> Me
+•> yuda1
+•> jointicket
+Oke itulah comment Yuda Bot Versi 1.5.3
 """
 KAC=[cl,ki,kk,kc]
 mid = cl.getProfile().mid
@@ -568,7 +610,7 @@ def bot(op):
                 kk.sendMessage(msg)
                 kc.sendMessage(msg)
             elif msg.text in ["cancel","Cancel"]:
-                if msg.toType == 2:
+                if msg.from_ in admin:
                     X = cl.getGroup(msg.to)
                     if X.invitee is not None:
                         gInviMids = [contact.mid for contact in X.invitee]
@@ -584,7 +626,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to,"Not for use less than group")
             elif msg.text in ["Yuda cancel","Bot cancel"]:
-                if msg.toType == 2:
+                if msg.from_ in admin:
                     G = k3.getGroup(msg.to)
                     if G.invitee is not None:
                         gInviMids = [contact.mid for contact in G.invitee]
