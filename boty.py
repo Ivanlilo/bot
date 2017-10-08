@@ -13,7 +13,7 @@ ki = YUDA.LINE()
 ki.login(qr=True)
 ki.loginResult()
 
-kk = cl = kc
+kk = kc = cl
 
 print "edited by Yuda silakan edit"
 reload(sys)
